@@ -1,0 +1,185 @@
+/* Base */
+* {
+    box-sizing: border-box;
+    font-family: inherit;
+    color: inherit;
+}
+
+html {
+    font-family: 'Inter',sans-serif;
+}
+
+body {
+    position: relative;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+main {
+    width: 100%;
+    max-width: 600px;
+    padding: 118px 52px 46px 52px;
+    background: #1F2937;
+}
+/* Typography */
+label {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 4px;
+    color: aliceblue;
+}
+/* Layout */
+div#heading {
+    position: relative;
+    width: 354px;
+    height: 80px;
+    letter-spacing: -0.025em;
+}
+h1 {
+    color: white;
+    margin-top: 1px;
+    margin-bottom: 1px;
+
+}
+h1#secondLine {
+    color: #55F991;
+
+}
+p {
+    /* Supporting text */
+    position: relative;
+    width: 372px;
+    height: 28px;
+    /* left: 52px;
+    top: 208px; */
+
+    /* text-xl/leading-7/font-normal */
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+
+
+    color: #D5D4D8;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    gap:16px;
+    background: #10B981;
+}
+/* Turn off number input arrows */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+button:hover,
+button:active {
+    opacity: 0.8;
+}
+
+button#generate {
+    color: white;
+    font-weight: lighter;   
+    padding: 12px 20px;
+    border-radius: 6px;
+    margin-right: 1rem;
+    /* what is rem,em? */
+    
+}
+.length-control {
+    height: 24px;
+    display: flex;
+
+}
+.length-control > button {
+    font-weight: bolder;
+    font-size: larger;
+}
+.length-control > input {
+    height: 100%;
+    width: 3em;
+    text-align: center;
+    background: #273549;   
+    color: white;
+}
+.length-control > input:focus {
+    background: rgba(0,0,0,0.1 );
+}
+
+.length-control > button {
+    padding: 0 12px;
+    font-weight: 500;
+}
+.length-control > button#decrement {
+    border-radius: 12px 0 0 12px;
+}
+.length-control > button#increment {
+    border-radius: 0 12px 12px 0;
+}
+
+.pop-up {
+    position:absolute;
+    background: #10B981;
+    width: 100%;
+    height: 50px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    opacity: 0;
+}
+.controls {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    
+}
+/* Password options section */
+.passwords {
+    border-top: 1px solid #2F3E53;
+    padding-top: 35px;
+    margin-top: 35px;
+}
+
+.password-list {
+    color: #55F991;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
+    gap: 24px 27px;
+    padding: 0px;
+    
+}
+
+.password-list > li,
+.password {
+    border-radius: 6px;
+    background: #273549;
+}
+
+.password-list > li {
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    list-style-type: none;
+}
+
+.password {
+    font-weight: 500;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* 24/4: my problem: 
+    how to format the 4 option boxes
+    how to organize the user
+    I should learn CSS more thoroughly
+
+*/
